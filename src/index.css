@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(245, 240, 231);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.main-nav{
+  width: 100%;
+  display: flex;
+  background-color: rgb(245, 223, 182);
+}
+.main-nav a{
+  text-decoration: none;
+  padding: .5rem 1rem;
+}
+.main-nav a.active {
+  font-weight: bold;
+}
+
+.login-section{
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 100px);
+  justify-content: center;
+  align-items: center;
+}
+.login-block {
+  width: 300px;
+  height: auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  padding: 2rem;
+  border-radius: .5rem;
+}
+.login-title {
+  text-align: center;
+  margin-top: 0;
+  color:  rgb(224, 170, 70);
+}
+.login-form {
+  width: 100%;
+}
+.login-form input, 
+.login-form label {
+  width: 100%;
+}
+.login-form input {
+  height: 30px;
+  margin-bottom: 25px;
+  border: 1px solid rgb(236, 189, 101);
+  border-radius: .25rem;
+  transition: all .1s;
+  text-indent: 10px;
+}
+.login-form input:focus{
+  border: 1px solid rgb(236, 189, 101);
+  outline: 3px solid rgba(236, 189, 101, .5); ;
+}
+.login-button-block{
+  text-align: right;
+}
+.login-button{
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  padding: .5rem 1.5rem;
+  border: 1px solid rgb(224, 170, 70);
+  border-radius: .25rem;
+  background-color: rgb(236, 189, 101);
+  box-shadow: 0 2px 2px rgba(0,0,0,.3);
+  transition: all .15s;
+}
+.login-button:hover {
+  background-color: rgb(224, 170, 70);
+  box-shadow: 0 2px 3px rgba(0,0,0,.3);
+}
+
+.home-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.home-block{
+  width: 300px;
+  border: 8px solid rgba(224, 170, 70, .5);
+  box-shadow: 0 2px 8px rgba(0,0,0,.5);
+  border-radius: .25rem;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+.home-block img {
+  width: 100%;
+}
+.title-block{
+  width: 100%;
+  display: flex;
+}
